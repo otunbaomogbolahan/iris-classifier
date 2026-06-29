@@ -26,3 +26,31 @@ model2 = KNeighborsClassifier(n_neighbors=5)
 model2.fit(x_train, y_train)
 y_pred2 = model2.predict(x_test)
 print("k-NN accuracy:", accuracy_score(y_test, y_pred2))
+
+import joblib
+
+joblib.dump(model, "decision_tree_model.joblib")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
